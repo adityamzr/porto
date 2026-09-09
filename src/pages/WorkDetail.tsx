@@ -144,6 +144,20 @@ export default function WorkDetail() {
                     </span>
                   ))}
                 </div>
+                <a
+                  href={work.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group relative mt-8 inline-flex rounded-full transition-transform duration-300 hover:scale-105"
+                >
+                  <span
+                    className="accent-gradient absolute -inset-[2px] rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    aria-hidden
+                  />
+                  <span className="relative flex items-center gap-2 rounded-full border-2 border-stroke bg-bg px-7 py-3.5 text-sm font-medium text-text-primary transition-colors duration-300 group-hover:border-transparent">
+                    Visit Live Site <span aria-hidden>↗</span>
+                  </span>
+                </a>
               </motion.div>
 
               <motion.div

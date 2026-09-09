@@ -186,6 +186,7 @@ export const WORKS: Work[] = [
     client: "Fieldnotes Collective",
     role: "Founder & Fullstack Developer",
     timeline: "Ongoing",
+    liveUrl: "#", // TODO: ganti dengan URL website asli Fieldnotes Collective
     deliverables: [
       "Editorial Platform",
       "Reading Experience",
