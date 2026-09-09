@@ -103,7 +103,7 @@ export default function ContactFooter() {
             </div>
           </div>
           <p className="mt-6 text-center text-xs text-muted/60">
-            © 2026 Aditya M Zain. All rights reserved.
+            © 2026 adityamzr. All rights reserved.
           </p>
         </div>
       </div>
