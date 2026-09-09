@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const LINKS = [
   { label: "Home", href: "#home" },
@@ -12,15 +13,26 @@ const SECTION_TO_LABEL: Record<string, string> = {
   resume: "Resume",
 };
 
-function scrollToSection(href: string) {
-  document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
-}
-
 export default function Navbar() {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const isHome = location.pathname === "/";
   const [active, setActive] = useState("Home");
   const [scrolled, setScrolled] = useState(false);
 
+  const go = (href: string) => {
+    if (!isHome) {
+      navigate("/", { state: { scrollTo: href.replace("#", "") } });
+    } else {
+      document.querySelector(href)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   useEffect(() => {
+    if (!isHome) {
+      setActive("");
+      return;
+    }
     const onScroll = () => {
       setScrolled(window.scrollY > 100);
 
@@ -37,7 +49,7 @@ export default function Navbar() {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [isHome]);
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 flex justify-center px-4 pt-4 md:pt-6">
@@ -52,7 +64,7 @@ export default function Navbar() {
           onClick={(e) => {
             e.preventDefault();
             setActive("Home");
-            scrollToSection("#home");
+            go("#home");
           }}
           className="accent-gradient block h-9 w-9 rounded-full p-[2px] transition-transform duration-300 hover:scale-110 hover:[background:linear-gradient(270deg,#89AACC_0%,#4E85BF_100%)]"
         >
@@ -70,7 +82,7 @@ export default function Navbar() {
             onClick={(e) => {
               e.preventDefault();
               setActive(link.label);
-              scrollToSection(link.href);
+              go(link.href);
             }}
             className={`rounded-full px-3 py-1.5 text-xs transition-colors sm:px-4 sm:py-2 sm:text-sm ${
               active === link.label
@@ -88,7 +100,7 @@ export default function Navbar() {
           href="#contact"
           onClick={(e) => {
             e.preventDefault();
-            scrollToSection("#contact");
+            go("#contact");
           }}
           className="group relative rounded-full text-xs sm:text-sm"
         >
