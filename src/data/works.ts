@@ -30,6 +30,7 @@ export interface Work {
   client: string;
   role: string;
   timeline: string;
+  liveUrl: string;
   deliverables: string[];
   description: string[];
   image: string;
@@ -52,6 +53,7 @@ export const WORKS: Work[] = [
     client: "Volt Automotive",
     role: "Fullstack Developer & Motion Designer",
     timeline: "4 months",
+    liveUrl: "#", // TODO: ganti dengan URL website asli Volt Automotive
     deliverables: [
       "3D Configurator",
       "WebGL Experience",
@@ -119,6 +121,7 @@ export const WORKS: Work[] = [
     client: "Studio Meridian",
     role: "Project Lead & Frontend Developer",
     timeline: "3 months",
+    liveUrl: "#", // TODO: ganti dengan URL website asli Studio Meridian
     deliverables: [
       "Portfolio Platform",
       "Image Pipeline",
@@ -253,6 +256,7 @@ export const WORKS: Work[] = [
     client: "Kirana Finance",
     role: "Design Engineer & Branding Consultant",
     timeline: "2 months",
+    liveUrl: "#", // TODO: ganti dengan URL website asli Kirana Finance
     deliverables: [
       "Logo System",
       "Design Tokens",
