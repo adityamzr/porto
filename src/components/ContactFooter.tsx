@@ -12,10 +12,15 @@ const SOCIALS = [
 
 const MARQUEE_ROW = "BUILD ON TRUST • ".repeat(10);
 
-export default function ContactFooter() {
+interface ContactFooterProps {
+  showMarquee?: boolean;
+}
+
+export default function ContactFooter({ showMarquee = true }: ContactFooterProps) {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    if (!showMarquee) return;
     const ctx = gsap.context(() => {
       gsap.to(marqueeRef.current, {
         xPercent: -50,
@@ -25,7 +30,7 @@ export default function ContactFooter() {
       });
     });
     return () => ctx.revert();
-  }, []);
+  }, [showMarquee]);
 
   return (
     <footer
@@ -41,6 +46,7 @@ export default function ContactFooter() {
       <div className="absolute inset-0 bg-black/60" aria-hidden />
 
       <div className="relative z-10">
+        {showMarquee && (
         <div className="overflow-hidden">
           <div ref={marqueeRef} className="flex w-max whitespace-nowrap">
             <span className="font-display text-5xl italic text-text-primary/90 md:text-7xl">
@@ -54,6 +60,7 @@ export default function ContactFooter() {
             </span>
           </div>
         </div>
+        )}
 
         <div className="mx-auto mt-16 flex max-w-[1200px] flex-col items-center px-6 text-center md:mt-24">
           <p className="mb-4 text-xs uppercase tracking-[0.3em] text-muted">

@@ -427,7 +427,7 @@ export default function WorkDetail() {
           </div>
         </section>
 
-        <ContactFooter />
+        <ContactFooter showMarquee={false} />
       </main>
     </motion.div>
   );
