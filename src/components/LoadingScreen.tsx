@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const WORDS = ["Design", "Create", "Inspire"];
+const WORDS = ["Analysis", "Build", "Inspire"];
 
 interface LoadingScreenProps {
   onComplete: () => void;

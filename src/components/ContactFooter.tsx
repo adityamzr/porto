@@ -4,13 +4,13 @@ import HlsVideo from "./HlsVideo";
 import { VIDEO_SRC } from "../constants";
 
 const SOCIALS = [
-  { label: "Twitter", href: "https://twitter.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
-  { label: "GitHub", href: "https://github.com" },
+  { label: "Instagram", href: "https://instagram.com/adityamzr" },
+  { label: "LinkedIn", href: "https://linkedin.com/adityamuhammadzr" },
+  { label: "GitHub", href: "https://github.com/adityamzr" },
+  { label: "Email", href: "mailto:adityamzainir@gmail.com" },
 ];
 
-const MARQUEE_ROW = "BUILDING THE FUTURE • ".repeat(10);
+const MARQUEE_ROW = "BUILD ON TRUST • ".repeat(10);
 
 export default function ContactFooter() {
   const marqueeRef = useRef<HTMLDivElement | null>(null);
@@ -64,7 +64,9 @@ export default function ContactFooter() {
             <em className="font-display italic">great</em>
           </h2>
           <a
-            href="mailto:hello@michaelsmith.com"
+            href="https://wa.me/6285724033354?text=Assalamu%27alaikum%2C%20saya%20menemukan%20portfolio%20Anda%20dan%20tertarik%20untuk%20berdiskusi%20lebih%20lanjut.%20Apakah%20kita%20bisa%20ngobrol%20mengenai%20peluang%20kerja%20sama%3F"
+            target="_blank"
+            rel="noreferrer"
             className="group relative inline-flex rounded-full transition-transform duration-300 hover:scale-105"
           >
             <span
@@ -72,7 +74,7 @@ export default function ContactFooter() {
               aria-hidden
             />
             <span className="relative flex items-center gap-2 rounded-full border border-stroke bg-bg/80 px-8 py-4 text-sm text-text-primary backdrop-blur-md transition-colors duration-300 group-hover:border-transparent md:text-base">
-              hello@michaelsmith.com <span aria-hidden>↗</span>
+              Chat on WhatsApp <span aria-hidden>↗</span>
             </span>
           </a>
         </div>
@@ -101,7 +103,7 @@ export default function ContactFooter() {
             </div>
           </div>
           <p className="mt-6 text-center text-xs text-muted/60">
-            © 2026 Michael Smith. All rights reserved.
+            © 2026 Aditya M Zain. All rights reserved.
           </p>
         </div>
       </div>

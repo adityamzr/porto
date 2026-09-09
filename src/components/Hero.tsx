@@ -3,7 +3,7 @@ import gsap from "gsap";
 import HlsVideo from "./HlsVideo";
 import { VIDEO_SRC } from "../constants";
 
-const ROLES = ["Creative", "Fullstack", "Founder", "Scholar"];
+const ROLES = ["Fullstack", "Project Manager", "Founder", "Creative"];
 
 interface HeroProps {
   ready: boolean;
@@ -16,7 +16,7 @@ export default function Hero({ ready }: HeroProps) {
   useEffect(() => {
     const id = window.setInterval(() => {
       setRoleIndex((i) => (i + 1) % ROLES.length);
-    }, 2000);
+    }, 2500);
     return () => window.clearInterval(id);
   }, []);
 
@@ -28,12 +28,12 @@ export default function Hero({ ready }: HeroProps) {
         ".name-reveal",
         { opacity: 0, y: 50 },
         { opacity: 1, y: 0, duration: 1.2 },
-        0.1
+        0.1,
       ).fromTo(
         ".blur-in",
         { opacity: 0, filter: "blur(10px)", y: 20 },
         { opacity: 1, filter: "blur(0px)", y: 0, duration: 1, stagger: 0.1 },
-        0.3
+        0.3,
       );
     }, sectionRef);
     return () => ctx.revert();
@@ -55,10 +55,11 @@ export default function Hero({ ready }: HeroProps) {
 
       <div className="relative z-10 flex flex-col items-center px-6 py-28 text-center">
         <p className="blur-in mb-8 text-xs uppercase tracking-[0.3em] text-muted">
-          Collection &rsquo;26
+          Assalamu'alaikum.
+          {/* &rsquo;26 */}
         </p>
         <h1 className="name-reveal mb-6 font-display text-6xl italic leading-[0.9] tracking-tight text-text-primary md:text-8xl lg:text-9xl">
-          Michael Smith
+          Aditya M Zain
         </h1>
         <p className="blur-in mb-6 text-lg text-muted md:text-xl">
           A{" "}
@@ -68,11 +69,11 @@ export default function Hero({ ready }: HeroProps) {
           >
             {ROLES[roleIndex]}
           </span>{" "}
-          lives in Chicago.
+          lives in Bandung.
         </p>
         <p className="blur-in mb-12 max-w-md text-sm text-muted md:text-base">
-          Designing seamless digital interactions by focusing on the unique
-          nuances which bring systems to life.
+          Building digital experiences that simplify complexity and bring ideas
+          to life.
         </p>
         <div className="blur-in inline-flex flex-wrap items-center justify-center gap-4">
           <a
@@ -108,7 +109,7 @@ export default function Hero({ ready }: HeroProps) {
               aria-hidden
             />
             <span className="relative flex items-center rounded-full border-2 border-stroke bg-bg px-7 py-3.5 text-sm font-medium text-text-primary transition-colors duration-300 group-hover:border-transparent">
-              Reach out...
+              Reach Out
             </span>
           </a>
         </div>
