@@ -43,138 +43,156 @@ export interface Work {
 
 export const WORKS: Work[] = [
   {
-    slug: "automotive-motion",
-    titleLead: "Automotive",
-    titleAccent: "Motion",
-    tagline:
-      "A real-time 3D vehicle configurator that turns browsing into an experience.",
-    category: "Motion / 3D",
-    year: "2025",
-    client: "Volt Automotive",
-    role: "Fullstack Developer & Motion Designer",
-    timeline: "4 months",
-    liveUrl: "#", // TODO: ganti dengan URL website asli Volt Automotive
+    slug: "onemission",
+    titleLead: "Onemission",
+    titleAccent: "Ecommerce",
+    tagline: "Bring back the value, because muslim values matter.",
+    category: "Ecommerce",
+    year: "2026",
+    client: "Onemission",
+    role: "Fullstack Developer",
+    timeline: "2.5 months",
+    liveUrl: "https://onemissionclo.com",
     deliverables: [
-      "3D Configurator",
-      "WebGL Experience",
-      "Design System",
-      "Headless CMS",
+      "Ecommerce Platform",
+      "Payment Gateway Integration",
+      "Guest Checkout",
+      "Order Tracking",
+      "Responsive Design",
+      "Donation Feature",
+      "Voting System",
     ],
     description: [
-      "Volt Automotive needed more than a product page — they needed a showroom that lives in the browser. I designed and built a real-time 3D configurator where visitors can rotate, recolor, and customize their vehicle with physically accurate lighting and motion.",
-      "The experience runs at a locked 60fps on mid-range devices thanks to aggressive asset optimization and GPU-friendly shaders, while a headless CMS lets the marketing team publish new colorways and trims without touching code.",
+      "ONEMISSION needed more than a storefront — they needed a complete commerce experience for modest sportswear. I designed and built the platform around product discovery, size selection, cart management, checkout, order tracking, and a seamless customer journey.",
+
+      "The platform brings together Midtrans payments, RajaOngkir and Biteship shipping, automated order workflows, inventory management, and an integrated admin system to support the entire operation behind the customer experience.",
     ],
     image:
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1400&auto=format&fit=crop",
+      "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/image.png?updatedAt=1789009281565",
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1600&auto=format&fit=crop",
-        caption: "Exterior studio lighting pass",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/onemission-commerce/image2.png?updatedAt=1789009796671",
+        caption: "Homepage with showroom hero",
       },
       {
-        src: "https://images.unsplash.com/photo-1493238792000-8113da705763?q=80&w=1600&auto=format&fit=crop",
-        caption: "Interior trim configurator",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/onemission-commerce/image3.png?updatedAt=1789009856509",
+        caption: "List of products with layout switcher",
       },
       {
-        src: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1600&auto=format&fit=crop",
-        caption: "Real-time colorway switching",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/onemission-commerce/image.png?updatedAt=1789009774465",
+        caption: "Give customer a knowledge of the product",
       },
     ],
     stats: [
-      { value: 60, suffix: "fps", label: "Render Performance" },
-      { value: 38, suffix: "%", label: "Conversion Uplift" },
-      { value: 12, suffix: "", label: "Colorways Shipped" },
+      { value: 100, suffix: "%", label: "Responsive Experience" },
+      { value: 3, suffix: "", label: "Payment & Shipping Integrations" },
+      { value: 1, suffix: "", label: "End-to-End Commerce Flow" },
     ],
     steps: [
       {
-        title: "Discover",
+        title: "Define",
         description:
-          "Stakeholder workshops, a competitive teardown of configurators, and performance budgets defined up front.",
+          "Mapped the ONEMISSION concept into a complete e-commerce experience, from customer journey to core product requirements.",
       },
       {
-        title: "Design",
+        title: "Architect",
         description:
-          "Motion studies, lighting direction, and a component system bridging the marketing site and 3D UI.",
+          "Designed a cohesive architecture connecting the Nuxt storefront, Laravel backend, APIs, and admin system.",
       },
       {
-        title: "Deliver",
+        title: "Build",
         description:
-          "React Three Fiber build, CMS integration, and device testing across 20+ phones and laptops.",
+          "Built the shopping experience across product discovery, cart, checkout, orders, and responsive customer interactions.",
+      },
+      {
+        title: "Integrate",
+        description:
+          "Connected shipping, payment, and commerce workflows to create a seamless end-to-end purchasing experience.",
+      },
+      {
+        title: "Ship",
+        description:
+          "Delivered a maintainable, scalable, and production-ready e-commerce platform built around ONEMISSION's needs.",
       },
     ],
     testimonial: {
       quote:
-        "Aditya turned our configurator into the highest-converting page on the site. The motion work alone doubled time-on-page.",
-      author: "Sarah Chen",
-      position: "Chief Product Officer, Volt Automotive",
+        "Working on ONEMISSION with this team turned our vision into a modern, seamless digital experience. The website feels fast, clean, and truly reflects who we are as a brand.",
+      author: "Fachri Hasan",
+      position: "Founder & CEO, Onemission",
     },
     span: "md:col-span-7",
   },
   {
-    slug: "urban-architecture",
-    titleLead: "Urban",
-    titleAccent: "Architecture",
+    slug: "sudut-haramain",
+    titleLead: "Sudut",
+    titleAccent: "Haramain",
     tagline:
-      "A digital archive and portfolio platform for a decade of built work.",
-    category: "Photography",
-    year: "2024",
-    client: "Studio Meridian",
-    role: "Project Lead & Frontend Developer",
-    timeline: "3 months",
-    liveUrl: "#", // TODO: ganti dengan URL website asli Studio Meridian
+      "See Haramain up close through local culture, information directly from Makkah and Madinah, and practical guides.",
+    category: "Media",
+    year: "2026",
+    client: "Sudut Haramain",
+    role: "IT Consultant & Fullstack Developer",
+    timeline: "2 weeks",
+    liveUrl: "https://sudutharamain.id", // TODO: ganti dengan URL website asli Studio Meridian
     deliverables: [
-      "Portfolio Platform",
-      "Image Pipeline",
-      "Booking Flow",
-      "CMS",
+      "Media Website",
+      "Editorial CMS",
+      "Responsive Design",
+      "CTA & Lead Generation",
+      "Searchable Content",
+      "Downloadable Resources",
     ],
     description: [
-      "Studio Meridian had ten years of award-winning projects scattered across PDFs and social posts. I led the project end-to-end: discovery, sitemap, and a full rebuild of their portfolio into a fast, searchable archive.",
-      "A custom image pipeline delivers responsive, art-directed photography at a fraction of the original file sizes, and an integrated booking flow turned the portfolio from a gallery into a lead engine.",
+      "Sudut Haramain needed more than a conventional travel website — it needed a digital platform that could make Makkah and Madinah feel closer, more accessible, and easier to navigate for Indonesian pilgrims. I designed and built the experience around practical information, local insights, and curated content from the Haramain.",
+
+      "The platform brings together real-time observations, city guides, transportation, worship preparation, local culture, and practical pilgrim resources in one streamlined experience. The result is a content-driven platform designed to help visitors discover, understand, and navigate Makkah–Madinah with greater confidence.",
     ],
     image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/sudut-haramain/image.png",
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=1600&auto=format&fit=crop",
-        caption: "Facade study — Meridian Tower",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/sudut-haramain/image2.png",
+        caption: "Welcome Page — Sudut Harmain",
       },
       {
-        src: "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?q=80&w=1600&auto=format&fit=crop",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/sudut-haramain/image3.png",
         caption: "Gallery grid with lazy detail views",
       },
       {
-        src: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1600&auto=format&fit=crop",
-        caption: "Studio interior, natural light",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/sudut-haramain/image_78dhYykft.png",
+        caption: "Description of what sudut haramain is about",
       },
     ],
     stats: [
-      { value: 120, suffix: "+", label: "Projects Archived" },
-      { value: 65, suffix: "%", label: "More Inquiries" },
-      { value: 70, suffix: "%", label: "Lighter Page Weight" },
+      { value: 6, suffix: "", label: "Core Content Sections" },
+      { value: 18, suffix: "+", label: "Practical Topics" },
+      { value: 2, suffix: "", label: "Cities Covered" },
     ],
+
     steps: [
       {
         title: "Discover",
         description:
-          "Content audit of 120+ projects, stakeholder interviews, and analytics review.",
+          "Structured the content around how Indonesian pilgrims actually explore Makkah and Madinah, from transportation and worship preparation to food, culture, and daily conditions.",
       },
       {
         title: "Design",
         description:
-          "Editorial grid system, typography-first layouts, and art direction for photography.",
+          "Designed an editorial-first experience with clear content categories, contextual discovery, and situation-based navigation to make practical information easier to find.",
       },
       {
         title: "Deliver",
         description:
-          "Performant build, automated image optimization, and a booking flow wired to the studio's CRM.",
+          "Built a responsive digital media platform that brings together Haramain updates, city guides, practical resources, and curated local insights in one streamlined experience.",
       },
     ],
+
     testimonial: {
       quote:
-        "Our portfolio finally matches the quality of our buildings. Inquiries doubled within a quarter.",
-      author: "Daniel Reyes",
-      position: "Principal Architect, Studio Meridian",
+        "The website gives Sudut Haramain a much stronger digital presence. It makes our information easier to explore while keeping the experience simple, informative, and true to our identity.",
+      author: "Ustadz Zulfadli",
+      position: "Founder, Sudut Haramain",
     },
     span: "md:col-span-5",
   },

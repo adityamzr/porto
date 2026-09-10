@@ -69,7 +69,7 @@ export default function Navbar() {
           className="accent-gradient block h-9 w-9 rounded-full p-[2px] transition-transform duration-300 hover:scale-110 hover:[background:linear-gradient(270deg,#89AACC_0%,#4E85BF_100%)]"
         >
           <span className="flex h-full w-full items-center justify-center rounded-full bg-bg font-display text-[13px] italic text-text-primary">
-            JA
+            AMZ
           </span>
         </a>
 
