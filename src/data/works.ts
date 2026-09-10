@@ -197,70 +197,75 @@ export const WORKS: Work[] = [
     span: "md:col-span-5",
   },
   {
-    slug: "human-perspective",
-    titleLead: "Human",
-    titleAccent: "Perspective",
-    tagline:
-      "An editorial storytelling platform documenting craftspeople across Asia.",
-    category: "Editorial",
-    year: "2025",
-    client: "Fieldnotes Collective",
-    role: "Founder & Fullstack Developer",
-    timeline: "Ongoing",
-    liveUrl: "#", // TODO: ganti dengan URL website asli Fieldnotes Collective
+    slug: "defiqa-catering",
+    titleLead: "Defiqa",
+    titleAccent: "Catering",
+    tagline: "Homemade cooking for every special occasion.",
+    category: "Simulation",
+    year: "2026",
+    client: "Defiqa Catering",
+    role: "Fullstack Developer",
+    timeline: "1 week",
+    liveUrl: "https://defiqa-catering.vercel.app/", // TODO: ganti dengan URL website asli Fieldnotes Collective
     deliverables: [
-      "Editorial Platform",
-      "Reading Experience",
-      "Memberships",
-      "Newsletter",
+      "Pricing Simulation",
+      "Food Menu",
+      "Catering Packages",
+      "FAQ",
+      "Contact Section",
     ],
     description: [
-      "Human Perspective started as a self-initiated project: long-form photo essays about craftspeople, designed to be read slowly. I built the entire platform — from the distraction-free reading experience to memberships and publishing tools.",
-      "Typography does the heavy lifting: fluid serif scales, generous line-length control, and offline reading support. The result is a publication that feels like print but lives and breathes on the web.",
+      "De Fiqa Catering needed a simple digital storefront that could make choosing and ordering catering feel as easy as browsing a menu. I designed and built the experience around their core offerings, from ready-made catering packages to a custom package simulator for customers with more specific needs.",
+
+      "The website brings together their catering packages, menu selections, delivery information, ordering flow, testimonials, and FAQs into a clear responsive experience. The custom simulator helps customers build a package based on their preferences before continuing the order through WhatsApp.",
     ],
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1200&auto=format&fit=crop",
+      "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/defiqa-catering/image.png",
     gallery: [
       {
-        src: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1600&auto=format&fit=crop",
-        caption: "Portrait series — the weavers",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/defiqa-catering/image.png",
+        caption: "A clear introduction to De Fiqa Catering",
       },
       {
-        src: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1600&auto=format&fit=crop",
-        caption: "Reading view, distraction-free",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/defiqa-catering/image_tlWts_UhD.png",
+        caption: "Package selection made simple",
       },
       {
-        src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1600&auto=format&fit=crop",
-        caption: "Behind the lens, on location",
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/defiqa-catering/image_Y8Y0NuP-I.png",
+        caption: "Interactive package simulation",
+      },
+      {
+        src: "https://ik.imagekit.io/fkoy34ckk/Porto%20Assets/defiqa-catering/image_hfXU_652l.png",
+        caption: "FAQ and information, all in one place",
       },
     ],
     stats: [
-      { value: 32, suffix: "", label: "Stories Published" },
-      { value: 180, suffix: "k", label: "Monthly Readers" },
-      { value: 12, suffix: "", label: "Countries Reached" },
+      { value: 300, suffix: "+", label: "Customers Served" },
+      { value: 20, suffix: "+", label: "Menu Options" },
+      { value: 4, suffix: "", label: "Step Ordering Flow" },
     ],
     steps: [
       {
-        title: "Discover",
+        title: "Plan",
         description:
-          "Reader interviews, print-magazine teardown, and defining what “slow reading” means digitally.",
+          "Defined the website structure, catering packages, menu presentation, delivery information, and the key journey from browsing to placing an order.",
       },
       {
-        title: "Design",
+        title: "Build",
         description:
-          "Serif-first type system, essay templates, and a photo treatment guide.",
+          "Developed the responsive interface, package pages, custom package simulator, FAQ, and supporting content into a cohesive digital experience.",
       },
       {
-        title: "Deliver",
+        title: "Refine",
         description:
-          "Full-stack platform with memberships, offline support, and an editor-friendly CMS.",
+          "Tested the experience across screen sizes and refined interactions, content hierarchy, and the ordering flow to keep everything clear and easy to use.",
       },
     ],
     testimonial: {
       quote:
-        "The most beautiful reading experience we've published on. Our stories finally get the stage they deserve.",
-      author: "Amara Wijaya",
-      position: "Editor-in-Chief, Fieldnotes Collective",
+        "The website makes it much easier for customers to understand our packages and choose what they need. The custom package flow also makes ordering feel much more straightforward.",
+      author: "Defiqa Catering",
+      position: "Owner, Defiqa Catering",
     },
     span: "md:col-span-5",
   },

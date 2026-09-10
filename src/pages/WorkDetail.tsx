@@ -323,8 +323,8 @@ export default function WorkDetail() {
                 How it <em className="font-display italic">came together</em>
               </h2>
               <p className="max-w-md text-sm text-muted md:text-base">
-                Three phases, one goal — ship work that performs as good as it
-                looks.
+                A focused process, one goal — building work that performs as
+                good as it looks.
               </p>
             </motion.div>
 
